@@ -1,7 +1,7 @@
-import Header from "./components/Header"
-import Contenido from "./components/Contenido"
 import { useState } from "react"
 import Contexto from "./Context/Context"
+import Home from "./views/Home"
+import Header from "./components/Header"
 
 function App() {
   const [tareas, setTareas] = useState([])
@@ -9,8 +9,8 @@ function App() {
   return (
     <div>
       <Contexto.Provider value={{tareas, setTareas}}>
-        <Header />
-        <Contenido />
+        <Header/>
+        <Home/>
       </Contexto.Provider>
 
     </div>

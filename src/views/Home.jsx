@@ -1,12 +1,12 @@
 import React from 'react'
-import Header from '../components/Header'
-import Contenido from '../components/Contenido'
+import ToDoList from '../components/To do list/ToDoList'
+import Calculadora from '../components/calculadora/Calculadora'
 
 export default function Home() {
     return (
         <div className='caja'>
-            <Header />
-            <Contenido />
+           <ToDoList/>
+           <Calculadora/>
         </div>
     )
 }
